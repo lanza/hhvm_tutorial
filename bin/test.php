@@ -5,7 +5,7 @@ function fibonacci(int $number): int {
 }
 
 <<__EntryPoint>>
-function main(): void {
+async function main_tes_async(): Awaitable<void> {
   $n = (int)(vec(\HH\global_get('argv') as Container<_>)[1] ?? 10);
   echo 'The '.$n.' number in fibonacci is: '.fibonacci($n).\PHP_EOL;
 }
